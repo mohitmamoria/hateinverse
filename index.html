@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hate Inverse</title>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+		body {
+			padding-top: 250px;
+			background: #ECEFF3;
+		}
+		p#title {
+			font-family: 'Raleway', sans-serif;
+			text-align: center;
+			font-size: 58px;
+			font-weight: 300;
+		}
+		span#typed-text {
+			font-weight: 700;
+		}
+		.typed-cursor{
+		    opacity: 1;
+		    font-size: 60px;
+		    -webkit-animation: blink 0.7s infinite;
+		    -moz-animation: blink 0.7s infinite;
+		    animation: blink 0.7s infinite;
+		}
+		@keyframes blink{
+		    0% { opacity:1; }
+		    50% { opacity:0; }
+		    100% { opacity:1; }
+		}
+		@-webkit-keyframes blink{
+		    0% { opacity:1; }
+		    50% { opacity:0; }
+		    100% { opacity:1; }
+		}
+		@-moz-keyframes blink{
+		    0% { opacity:1; }
+		    50% { opacity:0; }
+		    100% { opacity:1; }
+		}
+	</style>
+</head>
+<body>
+
+<p id="title">I <span id="typed-text"></span> You So So Much</p>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+
+<script type="text/javascript">
+	$(function(){
+        $("#typed-text").typed({
+            strings: ["Love", "Hate^500<sup>-1</sup>"],
+            contentType: "html",
+            typeSpeed: 200,
+            loop: true
+        });
+    });
+</script>
+</body>
+</html>
